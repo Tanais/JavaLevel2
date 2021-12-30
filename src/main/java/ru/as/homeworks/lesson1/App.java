@@ -22,9 +22,9 @@ public class App {
 
         Obstacle[] obstacles = {wall1, runTrack1, wall2, runTrack2};
 
-        for (int i = 0; i < obstacles.length; i++) {
+        for (Obstacle obstacle : obstacles) {
             for (Runner runner : runners) {
-                System.out.println(obstacles[i].check(runner));
+                System.out.println(obstacle.check(runner));
             }
         }
     }
