@@ -1,13 +1,27 @@
 package ru.as.homeworks.lesson2;
 
 public class MyArrayDataException extends Exception{
-    public int i;
-    public int j;
+    private int i;
+    private int j;
 
     MyArrayDataException(int i, int j) {
-        this.i = i;
-        this.j = j;
+        setI(i);
+        setJ(j);
     }
 
+    public int getI() {
+        return i;
+    }
 
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public int getJ() {
+        return j;
+    }
+
+    public void setJ(int j) {
+        this.j = j;
+    }
 }
